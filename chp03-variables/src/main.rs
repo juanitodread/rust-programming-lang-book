@@ -1,6 +1,6 @@
 const PI: f64 = 3.141516;
 
-fn main() {
+fn main() -> () {
     println!("Hello, world!");
     println!("This is a constant: {}", PI);
 
@@ -27,10 +27,10 @@ fn main() {
 }
 
 fn circle_area(rad: f64) -> f64 {
-    return PI * rad * rad;
+    PI * rad * rad
 }
 
-fn if_expression(input: i32) {
+fn if_expression(input: i32) -> () {
     if input < 5 {
         println!("Input is < 5: input = {}", input);
     } else if input == 5 {
@@ -40,7 +40,7 @@ fn if_expression(input: i32) {
     }
 }
 
-fn iterate_collection(array: &[f64]) {
+fn iterate_collection(array: &[f64]) -> (){
     for element in array {
         println!("Element: {}", element)
     }
